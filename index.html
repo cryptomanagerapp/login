@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Acesse a Crypto Manager</title>
+</head>
+<body>
+
+    <div class="container2-1">
+
+        <header class="header">
+            <p>Crypto<br/>Manager</p>
+        </header>
+        
+        <section class="container-primary">
+            
+            <div class="container-primary-wrapper form">
+                <h1>Ainda não tem<br/>uma <span class="h1-highlight">carteira</span>?</h1>
+                <span>Inicie sua carteira com a gente de graça</span>
+                <form>
+                    <label for="nome">Seu nome</label>
+                    <input type="text" name="nome" placeholder="Digite aqui seu nome completo">
+
+                    <label for="email">Seu e-mail</label>
+                    <input type="email" name="email" placeholder="Digite aqui seu e-mail">
+                </form>
+                    
+                <span>Você receberá a senha por e-mail</span>
+
+                <button type="button" class="button-primary">Criar agora</button>
+            </div>
+
+            <div class="container-primary-wrapper hidden">
+                <h2>Ainda não tem uma carteira?</h2>
+                <button type="button" class="button-secondary botao-criar">Criar</button>
+            </div>
+
+        </section>
+    
+        <section class="container-secondary">
+
+            <div class="container-secondary-wrapper">
+                <h2>Já tem uma carteira?</h2>
+                <button type="button" class="button-secondary botao-acessar">Acessar</button>
+            </div>
+
+            <div class="container-secondary-wrapper form hidden">
+                <h1>Já possui<br/>uma <span class="h1-highlight">carteira</span>?</h1>
+                <span>Suas criptomoedas estão te aguardando</span>
+                <form>
+                    <label for="email">Seu e-mail</label>
+                    <input type="email" name="email" placeholder="Digite aqui seu e-mail">
+                    
+                    <label for="nome">Sua senha</label>
+                    <input type="password" name="senha" placeholder="Digite aqui sua senha">
+                </form>
+                    
+                <button type="button" class="button-primary">Acessar</button>
+            </div>
+        </section>
+        
+        <!-- SVG CRYPTO MANAGER LOGO -->
+        <svg width="802" height="802" viewBox="0 0 802 802" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Logo">
+            <path id="cm-logo" fill-rule="evenodd" clip-rule="evenodd" d="M401 801C621.914 801 801 621.914 801 401C801 180.086 621.914 1 401 1C180.086 1 1 180.086 1 401C1 621.914 180.086 801 401 801ZM350.143 312.429C360.429 328.429 364.429 355.857 364.429 355.857H331.286C331.286 355.857 329.409 343.231 326.143 335.857C321.189 324.672 316.307 318.877 306.714 311.286C295.178 302.156 288.429 300.429 271.857 297C255.286 293.571 230.714 295.286 212.429 306.143C194.143 317 188.393 325.984 179.857 343.286C171.493 360.241 170.28 371.808 170.143 390.714C169.989 411.942 171.273 425.295 181.571 443.857C193.854 465.996 209.571 480.429 230.714 486.143C251.857 491.857 279.857 488.429 293 483.286C306.143 478.143 317.854 469.928 326.714 455.286C332.341 445.987 335.857 429 335.857 429H368.429C368.429 429 364.867 449.262 359.286 461C350.783 478.882 346.143 483.857 326.714 499.857C307.286 515.857 271.857 518.387 271.857 518.387V557.571H230.714V516.429C230.714 516.429 216.814 513.528 208.429 510.143C193.334 504.049 185.261 498.614 173.571 487.286C158.317 472.503 152.26 460.963 145 441C138.204 422.313 136.864 410.599 137 390.714C137.153 368.438 138.821 355.076 147.857 334.714C157.471 313.05 167.286 300.429 185 286.714C202.714 273 230.714 268.066 230.714 268.066V227.286H271.857V266.714C271.857 266.714 290.478 268.802 301.571 273C324.421 281.648 339.857 296.429 350.143 312.429ZM415.286 513H445V314.714L510.714 463.286H550.143L615.857 314.714V513H648.429V413.571V372.429V273H605L534.714 433H529L457.571 273H415.286V372.429V413.571V513ZM751 401C751 211.645 590.355 51 401 51C211.645 51 51 211.645 51 401C51 590.355 211.645 751 401 751C590.355 751 751 590.355 751 401Z" stroke="#FCBD38"/>
+            </g>
+            </svg>
+
+    </div> <!-- /.container2-1 -->
+        
+    <script type="text/javascript">
+    
+        const container = document.querySelector('.container2-1');
+
+        const botaoAcessar = document.querySelector(".botao-acessar");
+        const botaoCriar = document.querySelector(".botao-criar");
+
+        const formRegistrar = document.querySelector(".container-primary-wrapper.form");
+        const formAcessar = document.querySelector(".container-secondary-wrapper.form.hidden");
+
+        const divBotaoAcessar = document.querySelector(".container-secondary-wrapper:not(.form)");
+        const divBotaoRegistrar = document.querySelector(".container-primary-wrapper.hidden");
+
+        botaoAcessar.addEventListener("click", () => {
+
+            formRegistrar.classList.remove("fade-in-to-right");
+            formRegistrar.classList.add("fade-out-to-left");
+            divBotaoAcessar.classList.add("fade-out-to-right");
+
+            container.classList.remove("container2-1");
+            container.classList.add("container1-2");
+            
+            setTimeout(() => {
+                formAcessar.classList.remove("hidden");
+                formAcessar.classList.add("fade-in-to-left");
+
+                divBotaoRegistrar.classList.remove("hidden");
+                divBotaoRegistrar.classList.add("fade-in-to-right");
+
+                divBotaoAcessar.classList.add("hidden");
+                formRegistrar.classList.add("hidden");
+            }, 1000);
+        });
+
+        botaoCriar.addEventListener("click", () => {
+            formRegistrar.classList.remove("fade-out-to-left");
+            divBotaoAcessar.classList.remove("fade-out-to-right");
+
+            divBotaoRegistrar.classList.remove("fade-in-to-right");
+            divBotaoRegistrar.classList.add("fade-out-to-left");
+
+            formAcessar.classList.remove("fade-in-to-left");
+            formAcessar.classList.add("fade-out-to-right");
+
+            container.classList.remove("container1-2");
+            container.classList.add("container2-1");
+            
+            setTimeout(() => {
+                formRegistrar.classList.remove("hidden");
+                formRegistrar.classList.add("fade-in-to-right");
+
+                divBotaoAcessar.classList.remove("hidden");
+                divBotaoAcessar.classList.add("fade-in-to-left");
+
+                divBotaoRegistrar.classList.add("hidden");
+                formAcessar.classList.add("hidden");
+            }, 1000);
+        });        
+    </script>
+
+</body>
+</html>

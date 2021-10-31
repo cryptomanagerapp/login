@@ -1,0 +1,19 @@
+@import url(colors.css);
+
+:root {
+
+    /* TIPOGRAFIA */
+    --h1: 600 48px/80% 'Sora', sans-serif;
+    --h2: 400 36px/80% 'Sora', sans-serif;
+
+    --body-d1: 400 18px/140% 'Source Sans Pro', sans-serif;
+
+    /* BREAKPOINTS */
+    --display-desktop-xl: 1216px;
+    --display-desktop-l: 1100px;
+    --display-tablet: 900px;
+    --display-mobile-l: 425px;
+    --display-mobile-m: 375px;
+    --display-mobile-s: 320px;
+
+}
