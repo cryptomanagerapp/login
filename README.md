@@ -1,6 +1,6 @@
 # Interface de Software Responsiva
 
-Este projeto foi desenvolvido como estudo de caso pelos alunos Marcell Fernandes (@) e Wallace Andrade (@andradewall) para o Trabalho de Conclusão de Curso do Curso de Ciências da Computação da Universidade Carioca &mdash; UniCarioca.
+Este projeto foi desenvolvido como estudo de caso pelos alunos Marcell Fernandes (@MarcellFernandes) e Wallace Andrade (@andradewall) para o Trabalho de Conclusão de Curso do Curso de Ciências da Computação da Universidade Carioca &mdash; UniCarioca.
 
 ## Estudo de Caso
 
